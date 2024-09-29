@@ -6,7 +6,20 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    align-items: center;
+    background-color: var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+    gap: 1.5rem;
+    justify-content: center;
+    min-height: 100%;
+
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }

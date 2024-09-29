@@ -1,7 +1,7 @@
 @font-face {
     font-display: swap;
     font-family: 'Work Sans';
-    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf');
 }
 
 // Import SCSS partials
@@ -9,4 +9,5 @@
 @import 'reset';
 @import 'screen-reader-only';
 @import 'card';
+@import 'details';
 @import 'attribution';

@@ -1,4 +1,16 @@
 .card {
     background-color: var(--white);
-    // width: clamp (x, 0.872vw, x);
+    border-radius: clamp(7px, 1.05vw, 15px);
+    width: clamp(17.5rem, 87.2vw, 37.5rem);
+    padding: clamp(25px, 2.92vw, 42px);
+}
+
+h1 {
+    align-items: center;
+    display: flex;
+
+    span {
+        color: var(--dark-purple);
+        font-weight: 700;
+    }
 }

@@ -1,0 +1,116 @@
+@font-face {
+  font-display: swap;
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+:root {
+  --attribution-blue: hsl(229, 45%, 41%);
+  --bright-purple: hsl(281, 83%, 54%);
+  --dark-purple: hsl(292, 42%, 14%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --light-pink: hsl(276, 100%, 97%);
+  --white: hsl(0, 0%, 100%) ;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--light-pink);
+  display: flex;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  gap: 1.5rem;
+  justify-content: center;
+  min-height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: clamp(7px, 1.05vw, 15px);
+  width: clamp(17.5rem, 87.2vw, 37.5rem);
+  padding: clamp(25px, 2.92vw, 42px);
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+}
+h1 span {
+  color: var(--dark-purple);
+  font-weight: 700;
+}
+
+details summary {
+  color: var(--dark-purple);
+  cursor: pointer;
+  font-weight: 600;
+}
+details summary:first-of-type {
+  list-style-type: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary:hover, details summary:focus {
+  color: var(--bright-purple);
+}
+details p {
+  color: var(--grayish-purple);
+}
+details ~ details {
+  border-top: 1px solid var(--light-pink);
+}
+
+.attribution {
+  color: var(--dark-purple);
+  font-size: clamp(0.688rem, 2.7vw, 0.875rem);
+  text-align: center;
+}
+.attribution a {
+  color: var(--attribution-blue);
+}
+.attribution a:hover, .attribution a:focus {
+  color: var(--dark-purple);
+}
+
+/*# sourceMappingURL=compiled_style.css.map */

@@ -1,0 +1,27 @@
+details {
+    summary {
+        color: var(--dark-purple);
+        cursor: pointer;
+        font-weight: 600;
+
+        &:first-of-type {
+            list-style-type: none;
+        }
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &:hover, &:focus {
+            color: var(--bright-purple);
+        }
+    }
+
+    p {
+        color: var(--grayish-purple);
+    }
+
+    ~ details {
+        border-top: 1px solid var(--light-pink);
+    }
+}
