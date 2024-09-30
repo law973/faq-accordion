@@ -6,6 +6,7 @@ This is a solution to the [FAQ Accordion Challenge on Frontend Mentor](https://w
 
 - [Overview](#overview)
   - [The Challenge](#the-challenge)
+    - [Extra Challenge](#extra-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My Process](#my-process)
@@ -14,7 +15,6 @@ This is a solution to the [FAQ Accordion Challenge on Frontend Mentor](https://w
   - [Continued Development](#continued-development)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,6 +26,11 @@ Users should be able to:
 - Navigate the questions and hide/show answers using keyboard navigation alone
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+
+#### Extra Challenge
+
+- Research patterns for building an accessible accordion and try your hardest to make the accordion accessible
+- Complete the challenge without using JavaScript
 
 ### Screenshot
 
@@ -41,7 +46,11 @@ Users should be able to:
 ### Built With
 
 - Semantic HTML
-- CSS variables
+- CSS Flexbox
+- Media queries
+- SCSS
+- SCSS mixins
+- CSS/SCSS variables
 - Mobile-first workflow
 
 ### What I Learned
@@ -62,10 +71,13 @@ const proudOfThisFunc = () => {
 
 ### Continued Development
 
+I would like to continue using the details and summary elements and become more familiar with them; they're quite handy, but I don't think I've ever used them up until now.
+
 ### Useful Resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Accessible Accordion](https://www.aditus.io/patterns/accordion/) - This is a site that helped with making the accordion accessible.
+- [Accordion Example](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/) - This is another site that helped with making the accordion accessible.
+- [Smooth Shadow](https://shadows.brumm.af/) - This tool helped me generate the box shadows used for the card.
 
 ## Author
 
@@ -73,5 +85,3 @@ const proudOfThisFunc = () => {
 - Frontend Mentor - [@law973](https://www.frontendmentor.io/profile/law973)
 - LinkedIn - [Levi Wright](https://www.linkedin.com/in/levi-arthur-wright/)
 - GitHub - [@law973](https://github.com/law973)
-
-## Acknowledgments

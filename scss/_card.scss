@@ -1,18 +1,23 @@
 .card {
+    @include card-box-shadow;
     background-color: var(--white);
     border-radius: clamp(7px, 1.05vw, 15px);
-    width: clamp(17.5rem, 87.2vw, 37.5rem);
+    margin-top: clamp(3.033rem, 12vw, 3.313rem);
     padding: clamp(25px, 2.92vw, 42px);
+    width: clamp(17.5rem, 87.2vw, 37.5rem);
+
+    &:hover {
+        @include card-box-shadow("0px 4px 2px rgba(0, 0, 0, 0.07)");
+    }
 }
 
 .card__details {
-    padding: 1.5rem 0;
+    padding: clamp(1.25rem, 5vw, 1.5rem) 0;
 
     summary {
         color: var(--dark-purple);
         cursor: pointer;
-        font-weight: 600;
-        font-size: clamp(1rem, 4.2vw, 1.125rem);
+        font: 600 clamp(1rem, 4.2vw, 1.125rem)/1.2 $font-stack;
 
         &:first-of-type {
             list-style-type: none;
@@ -30,7 +35,7 @@
     p {
         color: var(--grayish-purple);
         font-size: clamp(0.875rem, 3.7vw, 1rem);
-        padding-top: 1.5rem;
+        margin-top: 1.5rem;
     }
 
     ~ .card__details {
@@ -59,7 +64,6 @@
 
     span {
         color: var(--dark-purple);
-        font-weight: 700;
-        font-size: clamp(2rem, 8.5vw, 3.5rem);
+        font: 700 clamp(2rem, 8.5vw, 3.5rem)/1.2 $font-stack;
     }
 }
