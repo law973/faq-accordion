@@ -1,0 +1,30 @@
+.background__container {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.background__desktop {
+    height: 20rem;
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+
+    @media screen and (max-width: 991.98px) {
+        visibility: hidden;
+    }
+}
+
+.background__mobile {
+    height: clamp(14.5rem, 32.25vw, 20rem);
+    object-fit: cover;
+    object-position: bottom;
+    width: 100vw;
+
+    @media screen and (min-width: 992px) {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

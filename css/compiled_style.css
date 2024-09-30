@@ -5,7 +5,7 @@
 }
 :root {
   --attribution-blue: hsl(229, 45%, 41%);
-  --bright-purple: hsl(281, 83%, 54%);
+  --pink: rgb(172, 40, 235);
   --dark-purple: hsl(292, 42%, 14%);
   --grayish-purple: hsl(292, 16%, 49%);
   --light-pink: hsl(276, 100%, 97%);
@@ -64,6 +64,39 @@ p, h1, h2, h3, h4, h5, h6 {
   white-space: nowrap !important;
 }
 
+.background__container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.background__desktop {
+  height: 20rem;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+@media screen and (max-width: 991.98px) {
+  .background__desktop {
+    visibility: hidden;
+  }
+}
+
+.background__mobile {
+  height: clamp(14.5rem, 32.25vw, 20rem);
+  object-fit: cover;
+  object-position: bottom;
+  width: 100vw;
+}
+@media screen and (min-width: 992px) {
+  .background__mobile {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 .card {
   background-color: var(--white);
   border-radius: clamp(7px, 1.05vw, 15px);
@@ -71,34 +104,53 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: clamp(25px, 2.92vw, 42px);
 }
 
-h1 {
-  align-items: center;
-  display: flex;
+.card__details {
+  padding: 1.5rem 0;
 }
-h1 span {
-  color: var(--dark-purple);
-  font-weight: 700;
-}
-
-details summary {
+.card__details summary {
   color: var(--dark-purple);
   cursor: pointer;
   font-weight: 600;
+  font-size: clamp(1rem, 4.2vw, 1.125rem);
 }
-details summary:first-of-type {
+.card__details summary:first-of-type {
   list-style-type: none;
 }
-details summary::-webkit-details-marker {
+.card__details summary::-webkit-details-marker {
   display: none;
 }
-details summary:hover, details summary:focus {
-  color: var(--bright-purple);
+.card__details summary:hover, .card__details summary:focus {
+  color: var(--pink);
 }
-details p {
+.card__details p {
   color: var(--grayish-purple);
+  font-size: clamp(0.875rem, 3.7vw, 1rem);
+  padding-top: 1.5rem;
 }
-details ~ details {
+.card__details ~ .card__details {
   border-top: 1px solid var(--light-pink);
+}
+.card__details:first-of-type {
+  padding-top: 0;
+}
+.card__details:last-of-type {
+  padding-bottom: 0;
+}
+
+.card__heading {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: clamp(1.063rem, 4.5vw, 1.563rem);
+}
+.card__heading img {
+  width: clamp(1.312rem, 5.5vw, 2.187rem);
+  height: clamp(1.312rem, 5.5vw, 2.186rem);
+}
+.card__heading span {
+  color: var(--dark-purple);
+  font-weight: 700;
+  font-size: clamp(2rem, 8.5vw, 3.5rem);
 }
 
 .attribution {

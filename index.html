@@ -10,12 +10,17 @@
   <link rel="stylesheet" href="css/compiled_style.css">
 </head>
 <body>
+  <!-- Background Pattern -->
+  <div class="background__container">
+    <img class="background__mobile" src="./assets/images/background-pattern-mobile.svg" alt="A dark purple background with two pink lines that are curved and thin.">
+    <img class="background__desktop" src="./assets/images/background-pattern-desktop.svg" alt="A dark purple background with three pink lines that are curved and thin.">
+  </div>
   <main>
     <!-- FAQs Card -->
     <article class="card">
-      <h1><img src="./assets/images/icon-star.svg"> <span>FAQs</span></h1>
+      <h1 class="card__heading"><img src="./assets/images/icon-star.svg" alt="A pink symbol in the shape of a four-pointed star."> <span>FAQs</span></h1>
       <!-- FAQ #1 -->
-      <details>
+      <details class="card__details">
         <summary>What is Frontend Mentor, and how will it help me?</summary>
         <p>
           Frontend Mentor offers realistic coding challenges to help developers improve their 
@@ -24,7 +29,7 @@
         </p>
       </details>
       <!-- FAQ #2 -->
-      <details>
+      <details class="card__details">
         <summary>Is Frontend Mentor free?</summary>
         <p>
           Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
@@ -32,7 +37,7 @@
         </p>
       </details>
       <!-- FAQ #3 -->
-      <details>
+      <details class="card__details">
         <summary>Can I use Frontend Mentor projects in my portfolio?</summary>
         <p>
           Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
@@ -40,7 +45,7 @@
         </p>
       </details>
       <!-- FAQ #4 -->
-      <details>
+      <details class="card__details">
         <summary>How can I get help if I'm stuck on a challenge?</summary>
         <p>
           The best place to get help is inside Frontend Mentor's Discord community. There's a help 
