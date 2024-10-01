@@ -11,46 +11,6 @@
     }
 }
 
-.card__details {
-    padding: clamp(1.25rem, 5vw, 1.5rem) 0;
-
-    summary {
-        color: var(--dark-purple);
-        cursor: pointer;
-        font: 600 clamp(1rem, 4.2vw, 1.125rem)/1.2 $font-stack;
-
-        &:first-of-type {
-            list-style-type: none;
-        }
-
-        &::-webkit-details-marker {
-            display: none;
-        }
-
-        &:hover, &:focus {
-            color: var(--pink);
-        }
-    }
-
-    p {
-        color: var(--grayish-purple);
-        font-size: clamp(0.875rem, 3.7vw, 1rem);
-        margin-top: 1.5rem;
-    }
-
-    ~ .card__details {
-        border-top: 1px solid var(--light-pink);
-    }
-
-    &:first-of-type {
-        padding-top: 0;
-    }
-
-    &:last-of-type {
-        padding-bottom: 0;
-    }
-}
-
 .card__heading {
     align-items: center;
     display: flex;
@@ -58,8 +18,8 @@
     margin-bottom: clamp(1.063rem, 4.5vw, 1.563rem);
 
     img {
-        width: clamp(1.312rem, 5.5vw, 2.187rem);
-        height: clamp(1.312rem, 5.5vw, 2.186rem);
+        width: clamp(1.563rem, 6.5vw, 2.438rem);
+        height: clamp(1.563rem, 6.5vw, 2.438rem);
     }
 
     span {

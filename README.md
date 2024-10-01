@@ -29,7 +29,6 @@ Users should be able to:
 
 #### Extra Challenge
 
-- Research patterns for building an accessible accordion and try your hardest to make the accordion accessible
 - Complete the challenge without using JavaScript
 
 ### Screenshot
@@ -55,6 +54,8 @@ Users should be able to:
 
 ### What I Learned
 
+I learned how to remove the default marker that comes with the summary element.
+
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
@@ -75,8 +76,6 @@ I would like to continue using the details and summary elements and become more 
 
 ### Useful Resources
 
-- [Accessible Accordion](https://www.aditus.io/patterns/accordion/) - This is a site that helped with making the accordion accessible.
-- [Accordion Example](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/) - This is another site that helped with making the accordion accessible.
 - [Smooth Shadow](https://shadows.brumm.af/) - This tool helped me generate the box shadows used for the card.
 
 ## Author
