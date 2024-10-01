@@ -33,7 +33,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot/screenshot.png)
+![](./screenshot/screenshot_mobile.png)
 
 ### Links
 
@@ -48,25 +49,33 @@ Users should be able to:
 - CSS Flexbox
 - Media queries
 - SCSS
-- SCSS mixins
+- SCSS extends and mixins
 - CSS/SCSS variables
 - Mobile-first workflow
 
 ### What I Learned
 
-I learned how to remove the default marker that comes with the summary element.
+I learned how to remove the default marker that comes with the summary element. Two settings need to be changed in order to cover a wide range of browsers:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+summary {
+  list-style-type: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+Also, I found that the Safari browser requires more consideration in regards to the size settings of img elements. When using a width of 100% on the desktop background image, the image's width was fixed and did not change according to the viewport width. When using a width of 100vw, the image width was dynamic, but could not grow beyond whatever width the viewport happened to have when the page was loaded/refreshed. To solve this, the div containing the background images was given a width of 100%, and the background images were set to inherit their widths:
+
+```css
+.background__container {
+  width: 100%;
+}
+
+.background__desktop, .background__mobile {
+  width: inherit;
 }
 ```
 

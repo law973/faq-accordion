@@ -6,10 +6,8 @@
 }
 
 .background__desktop {
+    @extend .background__image;
     height: 20rem;
-    object-fit: cover;
-    object-position: bottom;
-    width: inherit;
 
     @media screen and (max-width: 991.98px) {
         display: none;
@@ -17,10 +15,8 @@
 }
 
 .background__mobile {
+    @extend .background__image;
     height: clamp(14.5rem, 32.25vw, 20rem);
-    object-fit: cover;
-    object-position: bottom;
-    width: inherit;
 
     @media screen and (min-width: 992px) {
         display: none;

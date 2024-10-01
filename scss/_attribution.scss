@@ -2,10 +2,9 @@
     color: var(--dark-purple);
     font-size: clamp(0.688rem, 2.7vw, 0.875rem);
     margin-bottom: 1rem;
-    text-align: center;
 
     a {
-        color: var(--attribution-blue);
+        color: var(--chambray);
 
         &:hover, &:focus {
             color: var(--dark-purple);
