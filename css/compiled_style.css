@@ -89,19 +89,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .background__desktop {
   height: 20rem;
 }
-@media screen and (max-width: 991.98px) {
-  .background__desktop {
-    display: none;
-  }
-}
 
 .background__mobile {
   height: clamp(14.5rem, 32.25vw, 20rem);
-}
-@media screen and (min-width: 992px) {
-  .background__mobile {
-    display: none;
-  }
 }
 
 .card {
